@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="menado.css" />
+<style>
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+   .box input[type = "text"], .box input[type = "email"],.box input[type = "password"], .box input[type = "tel"], .box input[type = "submit"]{
+
+border: 0;
+
+background: none;
+
+display: block;
+
+margin: 20px auto;
+
+text-align: center;
+
+border: 2px solid #3498db;
+
+padding: 14px 10px;
+
+width: 200px;
+
+outline: none;
+
+color: white;
+
+border-radius: 24px;
+
+transition: 0.25s;
+
+}
+.box textarea{
+
+border: 0;
+
+background: none;
+
+display: block;
+
+margin: 20px auto;
+
+text-align: center;
+
+border: 2px solid #3498db;
+
+padding: 14px 10px;
+
+width: 200px;
+
+outline: none;
+
+color: grey;
+
+border-radius: 24px;
+
+transition: 0.25s;
+
+}
+* {
+  box-sizing: border-box;
+}
+.yt:hover{
+background-color:cyan;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+  background-color: white;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- <div class="header">
+  <h1>Rachmad Fadillah Website</h1>
+  
+</div> -->
+
+<div class="topnav">
+  <a href="website.html">Home</a>
+  <!-- <a href="#">About Us</a> -->
+ <!--  <a href="#">Profile</a> -->
+  <a href="#aboutus">About Us</a>
+  <a href="#events">Events</a>
+  <a href="#feedback">Feedback</a>
+  <a href="#gallery">Gallery</a>
+  <a href="profil.html">Login</a>
+ 
+ <!--  <a href="#" style="float:right">Link</a> -->
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <marquee>SAAT INI KEBUN BINATANG SUDAH BUKA</marquee>
+     <h2 style="text-align: center;">KEBUN BINATANG PANAM</h2>
+     <!--   <h5>Title description, Dec 7, 2020</h5> -->
+  <!--     <div class="fakeimg" style="height:200px;">Image</div> -->
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://asset.kompas.com/crops/-0vN6afZxMTt2i5IbEQEPh7wLGA=/0x0:0x0/750x500/data/photo/2020/03/02/5e5cea2854532.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://surabaya.singgasanahotels.com/img?src=da78f559cb5002c9717136dc00d7c1b0.jpg&width=920&height=530&crop-to-fit" style="width:100%">
+  <div class="text" style=" color: black; font-size: 30px;">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://statik.tempo.co/data/2020/08/24/id_961949/961949_720.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+     
+      <!-- <p>Sorang siswa kabur ke Menado  <a href="blog.html">Some text..</a></p> -->
+  
+
+    </div>
+   
+     
+      <br>
+
+  </div>
+  
+  <div class="card">
+    <h2 id="aboutus">About us</h2>
+    <h3>Kami Adalah Kebun Binatang Terbaik Di area Pekanbaru Raya di Kecamatan Panam</h3>
+  </div>
+  <div class="card">
+    
+    
+    <h2 id="events">Events</h2>
+   <h3>Still no upcoming events</h3>
+  </div>
+
+  
+  <div class="card">
+    
+    
+    <h2 id="events">Events</h2>
+   <h3>Still no upcoming events</h3>
+  </div>
+  <div class="card">
+    
+    
+    <h2 id="feedback">Feedback</h2>
+ <h3>"Kebun Binatang Terbaik yg Pernah Saya Datangi" - Andi</h3>
+ <h3>"Hewan yang cukup banyak" - Budi</h3>
+  </div>
+
+  <div class="card">
+    <h2 id="gallery">Gallery</h2>
+    <div class="gallery">
+        <a target="_blank" href="https://akcdn.detik.net.id/visual/2020/04/07/bc8f0a11-1372-4c54-ad39-b93cf08202d8_169.jpeg?w=650">
+          <img src="https://akcdn.detik.net.id/visual/2020/04/07/bc8f0a11-1372-4c54-ad39-b93cf08202d8_169.jpeg?w=650" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Panda</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://asset.kompas.com/crops/I3Ybmd6PAyFcjf2OMFj2aSr7NAo=/0x0:0x0/750x500/data/photo/2020/05/06/5eb287e8bcac5.jpg">
+          <img src="https://asset.kompas.com/crops/I3Ybmd6PAyFcjf2OMFj2aSr7NAo=/0x0:0x0/750x500/data/photo/2020/05/06/5eb287e8bcac5.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Orang Utan</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://cdn-2.tstatic.net/tribunnews/foto/bank/images/ilustrasi-kebun-binatang-jerapah.jpg">
+          <img src="https://cdn-2.tstatic.net/tribunnews/foto/bank/images/ilustrasi-kebun-binatang-jerapah.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Jerapah</div>
+      </div>
+  </div>
+  <!-- <div class="card">
+    
+    
+    <h2>Login</h2>
+    <form class="box" style="width: 300px; padding: 40px;   background: #191919; text-align: center;" method="post">
+      
+     
+      
+      
+      <input type="email" name="" placeholder="Email">
+      <input type="password" name="" placeholder="Password">
+     
+    
+    <input type="submit" onclick="alert('Hello World!')" name="" value="Register">
+  </form>
+   
+  </div>
+  <div class="card">
+    
+    
+    <h2>Register</h2>
+    <form class="box" style="width: 300px; padding: 40px;   background: #191919; text-align: center;" method="post">
+      
+     
+      <input type="text" name="" placeholder="Nama Lengkap">
+      
+      <input type="email" name="" placeholder="Email">
+      <textarea name="comment" >Enter text here...</textarea>
+              
+    
+    <input type="submit" onclick="alert('Hello World!')" name="" value="Register">
+  </form>
+  </div> -->
+  <!-- <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me or Profile</h2>
+      <div class="fakeimg" style="height:100px; width: 140px"><img src="https://qph.fs.quoracdn.net/main-thumb-917128001-200-hbdhbdpvwludzcldgqmhtjbpwdswvloa.jpeg" alt="" style="height: 100px; width:100px; padding-bottom: 20px;" ></div>
+      <p>Rachmad Fadillah Asal Riau. Ini Webnya ttg berita dibuat tanggal 14-02-2021</p>
+    </div>
+   
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div> -->
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
